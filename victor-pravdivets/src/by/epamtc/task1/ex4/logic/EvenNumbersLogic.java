@@ -1,7 +1,5 @@
 package by.epamtc.task1.ex4.logic;
 
-import by.epamtc.task1.scanner.DataScanner;
-
 public class EvenNumbersLogic {
 
 	public static boolean checkNumbers(int[] numbersArr) {
