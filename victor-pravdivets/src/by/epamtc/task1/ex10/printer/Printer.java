@@ -21,10 +21,8 @@ public class Printer {
 			double tg = map.get(key);
 			System.out.printf(" %4s | %10.5f\n ", key, tg);
 			System.out.println("-------------------");
-			
 		}
 		
 	}
-	
 	
 }
