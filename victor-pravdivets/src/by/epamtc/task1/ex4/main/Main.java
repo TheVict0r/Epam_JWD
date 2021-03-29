@@ -1,5 +1,6 @@
 package by.epamtc.task1.ex4.main;
 
+import by.epamtc.task1.ex4.datarequest.DataRequest;
 import by.epamtc.task1.ex4.logic.EvenNumbersLogic;
 
 /* Составить программу, печатающую значение true, 
@@ -13,7 +14,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		int[] numbersArr;
-		numbersArr = EvenNumbersLogic.recieveFourIntegersFromConsole();
+		numbersArr = DataRequest.recieveFourIntegersFromConsole();
 
 		boolean checkResult;
 		checkResult = EvenNumbersLogic.checkNumbers(numbersArr);
