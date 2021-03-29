@@ -3,7 +3,8 @@ package by.epamtc.task1.ex8.main;
 import by.epamtc.task1.ex8.logic.LogicForX;
 import by.epamtc.task1.scanner.DataScanner;
 
-/* Вычислить значение функции
+/* 
+ * Вычислить значение функции
  * 2 функции  в зависимости от сравнения x и 3 - 
  * сами функции не могу скопировать из PDF
  */
