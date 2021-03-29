@@ -44,8 +44,6 @@ public class Point {
 	}
 
 	
-	
-	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
