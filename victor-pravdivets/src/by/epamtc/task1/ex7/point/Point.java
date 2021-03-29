@@ -82,6 +82,4 @@ public class Point {
 		return getClass().getSimpleName()+ " " + name + " x=" + x + ", y=" + y;
 	}
 	
-	
-	
 }
