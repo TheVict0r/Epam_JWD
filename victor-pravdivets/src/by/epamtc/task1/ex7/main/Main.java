@@ -4,10 +4,11 @@ import by.epamtc.task1.ex7.datarequest.RequestPoint;
 import by.epamtc.task1.ex7.logic.PointLogic;
 import by.epamtc.task1.ex7.point.Point;
 
-/* Даны две точки А(х1, у1) и В(х2, у2). 
+/* 
+ * Даны две точки А(х1, у1) и В(х2, у2). 
  * Составить алгоритм, определяющий, которая из точек находится 
  * ближе к началу координат. x y.
-*/
+ */
 
 public class Main {
 
