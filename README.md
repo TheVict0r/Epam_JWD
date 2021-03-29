@@ -1,1 +1,1 @@
-# Epam_JWD
+# EPAM Java Web Development
