@@ -1,6 +1,6 @@
 package by.epamtc.task1.ex7.logic;
 
-import by.epamtc.task1.ex7.point.Point;
+import by.epamtc.task1.ex7.entity.Point;
 
 public class PointLogic {
 

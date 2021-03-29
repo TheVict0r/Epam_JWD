@@ -1,8 +1,8 @@
 package by.epamtc.task1.ex7.main;
 
 import by.epamtc.task1.ex7.datarequest.RequestPoint;
+import by.epamtc.task1.ex7.entity.Point;
 import by.epamtc.task1.ex7.logic.PointLogic;
-import by.epamtc.task1.ex7.point.Point;
 
 /* 
  * Даны две точки А(х1, у1) и В(х2, у2). 

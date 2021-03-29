@@ -1,6 +1,6 @@
 package by.epamtc.task1.ex7.datarequest;
 
-import by.epamtc.task1.ex7.point.Point;
+import by.epamtc.task1.ex7.entity.Point;
 import by.epamtc.task1.scanner.DataScanner;
 
 public class RequestPoint {

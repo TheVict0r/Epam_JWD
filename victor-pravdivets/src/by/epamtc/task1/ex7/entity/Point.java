@@ -1,4 +1,4 @@
-package by.epamtc.task1.ex7.point;
+package by.epamtc.task1.ex7.entity;
 
 public class Point {
 

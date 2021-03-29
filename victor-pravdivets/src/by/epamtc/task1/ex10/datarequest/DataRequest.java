@@ -1,6 +1,6 @@
 package by.epamtc.task1.ex10.datarequest;
 
-import by.epamtc.task1.ex10.bean.DataBean;
+import by.epamtc.task1.ex10.entity.DataBean;
 import by.epamtc.task1.scanner.DataScanner;
 
 public class DataRequest {

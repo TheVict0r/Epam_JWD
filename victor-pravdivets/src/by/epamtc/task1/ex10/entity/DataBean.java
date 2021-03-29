@@ -1,4 +1,4 @@
-package by.epamtc.task1.ex10.bean;
+package by.epamtc.task1.ex10.entity;
 
 
 @SuppressWarnings("serial")

@@ -2,8 +2,8 @@ package by.epamtc.task1.ex10.main;
 
 import java.util.Map;
 
-import by.epamtc.task1.ex10.bean.DataBean;
 import by.epamtc.task1.ex10.datarequest.DataRequest;
+import by.epamtc.task1.ex10.entity.DataBean;
 import by.epamtc.task1.ex10.printer.Printer;
 import by.epamtc.task1.ex10.tg.Tg;
 

@@ -3,7 +3,8 @@ package by.epamtc.task1.ex10.tg;
 
 import java.util.HashMap;
 import java.util.Map;
-import by.epamtc.task1.ex10.bean.DataBean;
+
+import by.epamtc.task1.ex10.entity.DataBean;
 
 public class Tg {
 
