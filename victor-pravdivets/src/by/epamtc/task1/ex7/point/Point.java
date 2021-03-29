@@ -6,8 +6,12 @@ public class Point {
 	private int y;
 	private String name;
 
+	public Point() {
+		
+	}
+	
+	
 	public Point(int x, int y) {
-		super();
 		this.x = x;
 		this.y = y;
 		this.name = "noName";
