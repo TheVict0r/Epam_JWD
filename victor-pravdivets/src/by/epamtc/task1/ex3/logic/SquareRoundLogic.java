@@ -15,19 +15,27 @@ public class SquareRoundLogic {
 	}
 
 	public static double compareSquaresAreas(double smallerArea, double biggerArea) {
-		return biggerArea / smallerArea;
+		double result;
+		result = biggerArea / smallerArea;
+		return result;
 	}
 
 	public static double calculateSquareSideByArea(double area) {
-		return Math.sqrt(area);
+		double result;
+		result = Math.sqrt(area);
+		return result;
 	}
 
 	public static double calculateSquareAreaByside(double side) {
-		return side * side;
+		double result;
+		result = side * side;
+		return result;
 	}
 
 	public static double calculateSquareSideByDiagonal(double diagonal) {
-		return Math.sqrt(diagonal * diagonal / 2);
+		double result;
+		result = Math.sqrt(diagonal * diagonal / 2);
+		return result;
 	}
 
 }
