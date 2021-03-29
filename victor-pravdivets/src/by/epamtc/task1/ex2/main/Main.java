@@ -4,6 +4,11 @@ import by.epamtc.task1.ex2.datarequest.DataRequest;
 import by.epamtc.task1.ex2.logic.YearAndMonthLogic;
 import by.epamtc.task1.ex2.printer.Printer;
 
+/*
+ * —оставить программу, котора€ по заданным году и номеру мес€ца 
+ * определ€ет количество дней в этом мес€це и корректно определ€лись все високосные года.
+ */
+
 public class Main {
 	public static void main(String[] args) {
 
