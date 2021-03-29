@@ -3,7 +3,8 @@ package by.epamtc.task1.ex6.main;
 import by.epamtc.task1.ex6.datarequest.DataRequest;
 import by.epamtc.task1.ex6.printer.Printer;
 
-/*Идет n-я секунда суток, определить, сколько полных часов, 
+/*
+ * Идет n-я секунда суток, определить, сколько полных часов, 
  * полных минут и секунд прошло к этому моменту. 
  */
 
