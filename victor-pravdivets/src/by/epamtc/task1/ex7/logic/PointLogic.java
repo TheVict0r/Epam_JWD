@@ -5,7 +5,7 @@ import by.epamtc.task1.ex7.exception.EmptyPointVariableException;
 
 public class PointLogic {
 
-	public static double defineDistanceToZero(Point point) throws EmptyPointVariableException {
+	public static double defineDistanceZero(Point point) throws EmptyPointVariableException {
 		
 		if (point == null) {
 			throw new EmptyPointVariableException();
@@ -26,8 +26,8 @@ public class PointLogic {
 			throw new EmptyPointVariableException();
 		}
 		
-		double distanceA = defineDistanceToZero(pointA);
-		double distanceB = defineDistanceToZero(pointB);
+		double distanceA = defineDistanceZero(pointA);
+		double distanceB = defineDistanceZero(pointB);
 		
 		Point result = new Point();
 		result.setName("equal distance");

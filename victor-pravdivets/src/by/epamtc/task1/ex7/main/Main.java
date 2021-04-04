@@ -20,11 +20,11 @@ public class Main {
 		Point pointB;
 
 		System.out.println("Введите координаты для точки A:");
-		pointA = RequestPoint.makePointWithDataFromConsole();
+		pointA = RequestPoint.makePointFromConsole();
 		pointA.setName("A");
 
 		System.out.println("Введите координаты для точки B:");
-		pointB = RequestPoint.makePointWithDataFromConsole();
+		pointB = RequestPoint.makePointFromConsole();
 		pointB.setName("B");
 
 		Point closerPoint = PointLogic.defineCloserPoint(pointA, pointB);

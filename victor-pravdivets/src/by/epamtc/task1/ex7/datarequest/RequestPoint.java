@@ -5,7 +5,7 @@ import by.epamtc.task1.scanner.DataScanner;
 
 public class RequestPoint {
 
-	public static Point makePointWithDataFromConsole() {
+	public static Point makePointFromConsole() {
 		int x;
 		int y;
 
