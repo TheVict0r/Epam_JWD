@@ -1,19 +1,13 @@
 package by.epamtc.task1.ex3.main;
 
-import by.epamtc.task1.ex3.datarequest.DataRequest;
-
-/*
-import by.epamtc.task1.ex3.datarequest.DataRequest;
-
 /*
  * Окружность вписана в квадрат заданной площади. 
  * Найти площадь квадрата, вписанного в эту окружность. 
  * Во сколько раз площадь вписанного квадрата меньше площади заданного? 
  */
 
+import by.epamtc.task1.ex3.datarequest.DataRequest;
 import by.epamtc.task1.ex3.logic.SquareRoundLogic;
-import by.epamtc.task1.scanner.DataScanner;
-
 
 public class Main {
 
