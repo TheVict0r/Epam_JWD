@@ -1,10 +1,16 @@
 package by.epamtc.task1.ex7.logic;
 
 import by.epamtc.task1.ex7.entity.Point;
+import by.epamtc.task1.ex7.exception.EmptyPointVariableException;
 
 public class PointLogic {
 
-	public static double calculateDistanceToZeroPoint(Point point) {
+	public static double defineDistanceToZero(Point point) throws EmptyPointVariableException {
+		
+		if (point == null) {
+			throw new EmptyPointVariableException();
+		}
+		
 		double distance;
 		int x = point.getX();
 		int y = point.getY();
@@ -14,19 +20,24 @@ public class PointLogic {
 		return distance;
 	}
 	
-	public static String closerToZeroPointName (Point pointA, Point pointB) {
+	public static Point defineCloserPoint (Point pointA, Point pointB) throws EmptyPointVariableException{
 		
-		double distanceA = calculateDistanceToZeroPoint(pointA);
-		double distanceB = calculateDistanceToZeroPoint(pointB);
+		if (pointA == null || pointB == null) {
+			throw new EmptyPointVariableException();
+		}
 		
-		String result;
+		double distanceA = defineDistanceToZero(pointA);
+		double distanceB = defineDistanceToZero(pointB);
+		
+		Point result = new Point();
+		result.setName("equal distance");
+		result.setX(pointA.getX());
+		result.setY(pointA.getY());
 		
 		if(distanceA < distanceB) {
-			result = "Ближе к началу координат находится точка " + pointA.getName() + ".";
+			result = pointA;
 		} else if(distanceB < distanceA) {
-			result = "Ближе к началу координат находится точка " + pointB.getName() + ".";
-		} else {
-			result = "Точки " + pointA.getName() + " и " + pointB.getName() + " равноудалены от начала координат.";
+			result = pointB;
 		}
 		
 		return result;
