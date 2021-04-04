@@ -1,6 +1,7 @@
 package by.epamtc.task1.ex6.main;
 
 import by.epamtc.task1.ex6.datarequest.DataRequest;
+import by.epamtc.task1.ex6.exception.WrongNumberOfSecondsException;
 import by.epamtc.task1.ex6.printer.Printer;
 
 /*
@@ -15,7 +16,11 @@ public class Main {
 		
 		secondsBeforeN = DataRequest.requestSeconds();
 		
+		try {
 		Printer.printResults(secondsBeforeN);
+		} catch (WrongNumberOfSecondsException e) {
+			e.printStackTrace();
+		}
 		
 	}
 

@@ -1,19 +1,23 @@
 package by.epamtc.task1.ex6.printer;
 
+import by.epamtc.task1.ex6.exception.WrongNumberOfSecondsException;
 import by.epamtc.task1.ex6.logic.LogicHoursMinutesSeconds;
 
 public class Printer {
 
-	public static void printResults(int secondsBeforeN) {
+	public static void printResults(int secondsBeforeN) throws WrongNumberOfSecondsException {
 
 		int hours;
 		int minutes;
 		int seconds;
 
+		
 		hours = LogicHoursMinutesSeconds.calculateHours(secondsBeforeN);
 		minutes = LogicHoursMinutesSeconds.calculateMinutes(secondsBeforeN);
 		seconds = LogicHoursMinutesSeconds.calculateSeconds(secondsBeforeN);
-
+		
+		
+		
 		String gone;
 		if (hours == 1) {
 			gone = "прошел ";
