@@ -2,7 +2,7 @@ package by.epamtc.task1.ex4.logic;
 
 public class EvenNumbersLogic {
 
-	public static boolean checkNumbers(int[] numbersArr) {
+	public static boolean isTwoEvens(int[] numbersArr) {
 
 		int evenCount = 0;
 

@@ -17,7 +17,7 @@ public class Main {
 		numbersArr = DataRequest.recieveFourIntegersFromConsole();
 
 		boolean checkResult;
-		checkResult = EvenNumbersLogic.checkNumbers(numbersArr);
+		checkResult = EvenNumbersLogic.isTwoEvens(numbersArr);
 
 		System.out.println(checkResult);
 
