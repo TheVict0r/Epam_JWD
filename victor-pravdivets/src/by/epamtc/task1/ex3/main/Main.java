@@ -1,5 +1,10 @@
 package by.epamtc.task1.ex3.main;
 
+import by.epamtc.task1.ex3.datarequest.DataRequest;
+
+/*
+import by.epamtc.task1.ex3.datarequest.DataRequest;
+
 /*
  * Окружность вписана в квадрат заданной площади. 
  * Найти площадь квадрата, вписанного в эту окружность. 
@@ -9,12 +14,12 @@ package by.epamtc.task1.ex3.main;
 import by.epamtc.task1.ex3.logic.SquareRoundLogic;
 import by.epamtc.task1.scanner.DataScanner;
 
+
 public class Main {
 
 	public static void main(String[] args) {
 		double outerSquareArea;
-		System.out.println("Пожалуйста, введите площадь исходного квадрата:");
-		outerSquareArea = DataScanner.enterDoubleFromConsole();
+		outerSquareArea = DataRequest.enterSquareArea();
 		
 		double innerSquareArea;
 		innerSquareArea = SquareRoundLogic.calculateInnerSquareArea(outerSquareArea);
