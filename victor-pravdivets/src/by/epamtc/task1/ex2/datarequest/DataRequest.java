@@ -4,7 +4,7 @@ import by.epamtc.task1.scanner.DataScanner;
 
 public class DataRequest {
 	
-	public static int yearRequest() {
+	public static int enterYear() {
 		int year;
 		System.out.println("Пожалуйста, введите год: ");
 
@@ -21,7 +21,7 @@ public class DataRequest {
 	}
 
 	
-	public static int monthRequest() {
+	public static int enterMonth() {
 		int month;
 		System.out.println("Введите месяц:");
 		
