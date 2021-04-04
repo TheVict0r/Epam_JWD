@@ -12,15 +12,15 @@ public class Printer {
 		List<Integer> keys = new ArrayList<>(map.keySet());
 		Collections.sort(keys);
 		
-		System.out.println();
-		System.out.println(" -------------------");
-		System.out.println("   x  |     tg(x)   ");
-		System.out.println(" ===================");
+			System.out.println();
+			System.out.println(" -------------------");
+			System.out.println("   x  |     tg(x)   ");
+			System.out.println(" ===================");
 		
 		for(Integer key : keys) {
 			double tg = map.get(key);
-			System.out.printf(" %4s | %10.5f\n ", key, tg);
-			System.out.println("-------------------");
+			System.out.printf(  " %4s | %10.5f\n ", key, tg);
+			System.out.println( "-------------------");
 		}
 		
 	}
