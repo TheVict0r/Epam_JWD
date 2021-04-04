@@ -10,7 +10,7 @@ public class LogicForX {
 	
 	public static double calculateThreeAndMoreFormula(int x) {
 		double result;
-		result = -(x*x) + 3*x +9;
+		result = -(x*x) + 3*x + 9;
 		return result;
 	}
 	
