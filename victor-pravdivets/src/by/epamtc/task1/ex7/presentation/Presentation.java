@@ -11,4 +11,6 @@ public class Presentation {
 			System.out.printf("Ближе к началу координат находится точка %s.", closerPoint.getName());
 		}
 	}
+	
+	
 }
