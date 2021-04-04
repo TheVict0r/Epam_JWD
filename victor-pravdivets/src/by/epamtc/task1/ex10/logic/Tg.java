@@ -1,4 +1,4 @@
-package by.epamtc.task1.ex10.tg;
+package by.epamtc.task1.ex10.logic;
 
 
 import java.util.HashMap;

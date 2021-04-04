@@ -4,8 +4,8 @@ import java.util.Map;
 
 import by.epamtc.task1.ex10.datarequest.DataRequest;
 import by.epamtc.task1.ex10.entity.DataBean;
+import by.epamtc.task1.ex10.logic.Tg;
 import by.epamtc.task1.ex10.printer.Printer;
-import by.epamtc.task1.ex10.tg.Tg;
 
 /* Составить программу для вычисления значений 
  * функции F(x) на отрезке [а, b] с шагом h. 
