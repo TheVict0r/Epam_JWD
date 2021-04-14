@@ -12,7 +12,7 @@ public class Tg {
 				//throw new InconsistentDataException("Начальное значение не может быть больше, чем конечное.");
 				//пока не реализовано
 			} else if (a + h > b) {
-				//throw new InconsistentDataException("Шаг не может превышать диапазон между начальными и конечными данными.");
+				//throw new InconsistentDataException("Шаг не может превышать диапазон между начальной и конечной точками.");
 				//пока не реализовано
 			}
 			
