@@ -9,6 +9,12 @@ import java.util.Map;
 public class Printer {
 
 	public static void printResults (Map<Integer, Double> map) {
+		
+		if (map == null) {
+			//throw new NullMapException(map);
+			//пока не реализовано
+		}
+		
 		List<Integer> keys = new ArrayList<>(map.keySet());
 		Collections.sort(keys);
 		

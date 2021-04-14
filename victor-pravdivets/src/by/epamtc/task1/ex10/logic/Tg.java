@@ -6,23 +6,18 @@ import java.util.Map;
 
 public class Tg {
 
-	//public static Map<Integer, Double> calculateTG (DataBean dataBean){
 		public static Map<Integer, Double> calculateTG (int a, int b, int h){
 		
 			if (a > b) {
 				//throw new InconsistentDataException("Начальное значение не может быть больше, чем конечное.");
 				//пока не реализовано
 			} else if (a + h > b) {
-				//throw new InconsistentDataException("Шаг не может превышать диапазон начальных и конечных данных.");
+				//throw new InconsistentDataException("Шаг не может превышать диапазон между начальными и конечными данными.");
 				//пока не реализовано
 			}
 			
 			
 		Map<Integer, Double> map = new HashMap<>();
-		
-//		int a = dataBean.getA();
-//		int b = dataBean.getB();
-//		int h = dataBean.getH();
 		
 		for(int i = a; i <= b; i += h) {
 			double tg = Math.tan(i);
