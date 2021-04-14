@@ -4,6 +4,11 @@ public class EvenNumbersLogic {
 
 	public static boolean isTwoEvens(int[] numbersArr) {
 
+		if (numbersArr == null) {
+			// throw new NullArrayException(numbersArr);
+			// пока не реализовано
+		}
+
 		int evenCount = 0;
 
 		boolean result = false;
@@ -12,9 +17,12 @@ public class EvenNumbersLogic {
 			if (i % 2 == 0) {
 				evenCount++;
 			}
-		}
+			result = (evenCount >= 2);
+			if (result) {
+				break;
+			}
 
-		result = (evenCount >= 2);
+		}
 
 		return result;
 	}
