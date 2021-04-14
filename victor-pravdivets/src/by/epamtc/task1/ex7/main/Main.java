@@ -2,7 +2,6 @@ package by.epamtc.task1.ex7.main;
 
 import by.epamtc.task1.ex7.datarequest.RequestPoint;
 import by.epamtc.task1.ex7.entity.Point;
-import by.epamtc.task1.ex7.exception.EmptyPointVariableException;
 import by.epamtc.task1.ex7.logic.PointLogic;
 import by.epamtc.task1.ex7.presentation.Presentation;
 
@@ -27,11 +26,9 @@ public class Main {
 		pointB = RequestPoint.makePointFromConsole();
 		pointB.setName("B");
 
-		try {
+		
 		Point closerPoint = PointLogic.defineCloserPoint(pointA, pointB);
 		Presentation.printResult(closerPoint);
-		} catch (EmptyPointVariableException e) {
-			e.printStackTrace();
-		}
+		
 	}
 }

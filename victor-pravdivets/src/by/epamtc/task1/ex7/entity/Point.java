@@ -14,7 +14,10 @@ public class Point {
 	public Point(int x, int y) {
 		this.x = x;
 		this.y = y;
-		this.name = "noName";
+		this.name = "noName"; // используется для вывода имени ближайшей точки, 
+							 //а также в качестве опознавательного "тэга" в ситуации, 
+							//когда точки находятся на одинаковом расстоянии от начала координат
+						   //(см. class "PointLogic" строка 40)
 	}
 
 	public int getX() {

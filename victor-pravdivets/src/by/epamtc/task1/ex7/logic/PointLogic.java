@@ -1,14 +1,15 @@
 package by.epamtc.task1.ex7.logic;
 
 import by.epamtc.task1.ex7.entity.Point;
-import by.epamtc.task1.ex7.exception.EmptyPointVariableException;
+
 
 public class PointLogic {
 
-	public static double defineDistanceZero(Point point) throws EmptyPointVariableException {
+	public static double defineDistanceZero(Point point) {
 		
 		if (point == null) {
-			throw new EmptyPointVariableException();
+			//throw new EmptyPointVariableException(point);
+			//пока не реализовано
 		}
 		
 		double distance;
@@ -20,10 +21,16 @@ public class PointLogic {
 		return distance;
 	}
 	
-	public static Point defineCloserPoint (Point pointA, Point pointB) throws EmptyPointVariableException{
+	public static Point defineCloserPoint (Point pointA, Point pointB) {
 		
-		if (pointA == null || pointB == null) {
-			throw new EmptyPointVariableException();
+		if (pointA == null) {
+			//throw new EmptyPointVariableException(pointA);
+			//пока не реализовано
+		}
+		
+		if (pointB == null) {
+			//throw new EmptyPointVariableException(pointB);
+			//пока не реализовано
 		}
 		
 		double distanceA = defineDistanceZero(pointA);
