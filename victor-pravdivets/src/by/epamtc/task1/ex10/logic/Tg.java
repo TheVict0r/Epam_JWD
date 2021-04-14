@@ -4,17 +4,25 @@ package by.epamtc.task1.ex10.logic;
 import java.util.HashMap;
 import java.util.Map;
 
-import by.epamtc.task1.ex10.entity.DataBean;
-
 public class Tg {
 
-	public static Map<Integer, Double> calculateTG (DataBean dataBean){
+	//public static Map<Integer, Double> calculateTG (DataBean dataBean){
+		public static Map<Integer, Double> calculateTG (int a, int b, int h){
 		
+			if (a > b) {
+				//throw new InconsistentDataException("Начальное значение не может быть больше, чем конечное.");
+				//пока не реализовано
+			} else if (a + h > b) {
+				//throw new InconsistentDataException("Шаг не может превышать диапазон начальных и конечных данных.");
+				//пока не реализовано
+			}
+			
+			
 		Map<Integer, Double> map = new HashMap<>();
 		
-		int a = dataBean.getA();
-		int b = dataBean.getB();
-		int h = dataBean.getH();
+//		int a = dataBean.getA();
+//		int b = dataBean.getB();
+//		int h = dataBean.getH();
 		
 		for(int i = a; i <= b; i += h) {
 			double tg = Math.tan(i);
