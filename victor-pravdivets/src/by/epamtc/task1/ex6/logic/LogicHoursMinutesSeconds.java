@@ -1,6 +1,5 @@
 package by.epamtc.task1.ex6.logic;
 
-import by.epamtc.task1.ex6.exception.WrongNumberOfSecondsException;
 
 public class LogicHoursMinutesSeconds{
 	
@@ -8,14 +7,15 @@ public static final int SECONDS_IN_MINUTE = 60;
 public static final int MINUTES_IN_HOUR = 60;
 public static final int SECONS_IN_DAY = 86_400;
 
-	public static int calculateHours(int secondsBeforeN) throws WrongNumberOfSecondsException {
+	public static int calculateHours(int secondsBeforeN)  {
 		
 		if (secondsBeforeN < 0) {
-			throw new WrongNumberOfSecondsException("Секунда не может быть отрицательной");
+			//throw new IncorrectTimeException("Секунда не может быть отрицательной");
+			//пока не реализовано
 		} else if (secondsBeforeN == 0) {
-			throw new WrongNumberOfSecondsException("Секунда не может быть нулевой");
+			//throw new IncorrectTimeException("Секунда не может быть нулевой");
 		} else if (secondsBeforeN > SECONS_IN_DAY) {
-			throw new WrongNumberOfSecondsException("Количество секунд превышает максимально возможное");
+			//throw new IncorrectTimeException("Количество секунд превышает максимально возможное");
 		}
 		
 		int hours;
@@ -23,14 +23,14 @@ public static final int SECONS_IN_DAY = 86_400;
 		return hours;
 	}
 	
-	public static int calculateMinutes(int secondsBeforeN) throws WrongNumberOfSecondsException {
+	public static int calculateMinutes(int secondsBeforeN) {
 		
 		if (secondsBeforeN < 0) {
-			throw new WrongNumberOfSecondsException("Секунда не может быть отрицательной");
+			//throw new IncorrectTimeException("Секунда не может быть отрицательной");
 		} else if (secondsBeforeN == 0) {
-			throw new WrongNumberOfSecondsException("Секунда не может быть нулевой");
+			//throw new IncorrectTimeException("Секунда не может быть нулевой");
 		} else if (secondsBeforeN > SECONS_IN_DAY) {
-			throw new WrongNumberOfSecondsException("Количество секунд превышает максимально возможное");
+			//throw new IncorrectTimeException("Количество секунд превышает максимально возможное");
 		}
 
 		
@@ -39,13 +39,13 @@ public static final int SECONS_IN_DAY = 86_400;
 		return minutes;
 	}
 	
-	public static int calculateSeconds(int secondsBeforeN) throws WrongNumberOfSecondsException {
+	public static int calculateSeconds(int secondsBeforeN) {
 		if (secondsBeforeN < 0) {
-			throw new WrongNumberOfSecondsException("Секунда не может быть отрицательной");
+			//throw new IncorrectTimeException("Секунда не может быть отрицательной");
 		} else if (secondsBeforeN == 0) {
-			throw new WrongNumberOfSecondsException("Секунда не может быть нулевой");
+			//throw new IncorrectTimeException("Секунда не может быть нулевой");
 		} else if (secondsBeforeN > SECONS_IN_DAY) {
-			throw new WrongNumberOfSecondsException("Количество секунд превышает максимально возможное");
+			//throw new IncorrectTimeException("Количество секунд превышает максимально возможное");
 		}
 
 		

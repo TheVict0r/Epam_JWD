@@ -1,22 +1,29 @@
 package by.epamtc.task1.ex6.printer;
 
-import by.epamtc.task1.ex6.exception.WrongNumberOfSecondsException;
-import by.epamtc.task1.ex6.logic.LogicHoursMinutesSeconds;
-
 public class Printer {
 
-	public static void printResults(int secondsBeforeN) throws WrongNumberOfSecondsException {
+	public static void printResults(int hours, int minutes, int seconds) {
 
-		int hours;
-		int minutes;
-		int seconds;
+		if (hours < 0) {
+			//throw new IncorrectTimeException("Часы не могут быть отрицательными");
+			//пока не реализовано
+		} else if (hours > 59) {
+			//throw new IncorrectTimeException("Количество часов превышает максимально возможное");
+		}
+		
+		if (minutes < 0) {
+			//throw new IncorrectTimeException("Минуты не могут быть отрицательными");
+			//пока не реализовано
+		} else if (minutes > 59) {
+			//throw new IncorrectTimeException("Количество минут превышает максимально возможное");
+		}
 
-		
-		hours = LogicHoursMinutesSeconds.calculateHours(secondsBeforeN);
-		minutes = LogicHoursMinutesSeconds.calculateMinutes(secondsBeforeN);
-		seconds = LogicHoursMinutesSeconds.calculateSeconds(secondsBeforeN);
-		
-		
+		if (seconds < 0) {
+			//throw new IncorrectTimeException("Секунды не может быть отрицательными");
+			//пока не реализовано
+		} else if (seconds > 59) {
+			//throw new IncorrectTimeException("Количество секунд превышает максимально возможное");
+		}
 		
 		String gone;
 		if (hours == 1) {
@@ -37,6 +44,14 @@ public class Printer {
 	}
 
 	public static String makeHoursRussianWording(int hours) {
+		
+		if (hours < 0) {
+			//throw new IncorrectTimeException("Часы не могут быть отрицательными");
+			//пока не реализовано
+		} else if (hours > 59) {
+			//throw new IncorrectTimeException("Количество часов превышает максимально возможное");
+		}
+		
 		String hoursStrRu;
 
 		switch (hours) {
@@ -59,6 +74,14 @@ public class Printer {
 	}
 
 	public static String makeMinutesRussianWording(int minutes) {
+		
+		if (minutes < 0) {
+			//throw new IncorrectTimeException("Минуты не могут быть отрицательными");
+			//пока не реализовано
+		} else if (minutes > 59) {
+			//throw new IncorrectTimeException("Количество минут превышает максимально возможное");
+		}
+		
 		String minutesStrRu;
 
 		if (minutes >= 11 && minutes <= 14) {
@@ -75,6 +98,14 @@ public class Printer {
 	}
 
 	public static String makeSecondsRussianWordings(int seconds) {
+		
+		if (seconds < 0) {
+			//throw new IncorrectTimeException("Секунды не может быть отрицательными");
+			//пока не реализовано
+		} else if (seconds > 59) {
+			//throw new IncorrectTimeException("Количество секунд превышает максимально возможное");
+		}
+		
 		String secondsStrRu;
 
 		if (seconds >= 11 && seconds <= 14) {

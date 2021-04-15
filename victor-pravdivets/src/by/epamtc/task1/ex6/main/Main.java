@@ -1,7 +1,7 @@
 package by.epamtc.task1.ex6.main;
 
 import by.epamtc.task1.ex6.datarequest.DataRequest;
-import by.epamtc.task1.ex6.exception.WrongNumberOfSecondsException;
+import by.epamtc.task1.ex6.logic.LogicHoursMinutesSeconds;
 import by.epamtc.task1.ex6.printer.Printer;
 
 /*
@@ -15,12 +15,16 @@ public class Main {
 		int secondsBeforeN;
 		
 		secondsBeforeN = DataRequest.requestSeconds();
-		
-		try {
-		Printer.printResults(secondsBeforeN);
-		} catch (WrongNumberOfSecondsException e) {
-			e.printStackTrace();
-		}
+
+		int hours;
+		int minutes;
+		int seconds;
+
+		hours = LogicHoursMinutesSeconds.calculateHours(secondsBeforeN);
+		minutes = LogicHoursMinutesSeconds.calculateMinutes(secondsBeforeN);
+		seconds = LogicHoursMinutesSeconds.calculateSeconds(secondsBeforeN);
+	
+		Printer.printResults(hours, minutes, seconds);
 		
 	}
 
