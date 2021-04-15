@@ -2,7 +2,7 @@ package by.epamtc.task1.ex5.logic;
 
 public class PerfectNumberLogic {
 	public static boolean isPerfectNumber(int num) {
-		if(num <= 0) {
+		if(num <= 0) { //проверка на натуральное число
 			return false;
 		}
 		
