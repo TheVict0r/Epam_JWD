@@ -1,12 +1,12 @@
 package by.epamtc.task1.ex2.printer;
 
-import by.epamtc.task1.ex2.exception.TotalDaysMonthException;
 
 public class Printer {
 	
-	public static void printResult(int days) throws TotalDaysMonthException {
+	public static void printResult(int days)  {
 		if (days < 28 || days > 31) {
-			throw new TotalDaysMonthException();
+			//throw new TotalDaysInMonthException(days);
+			//пока не реализовано
 		}
 		
 		String message;

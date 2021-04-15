@@ -1,14 +1,12 @@
 package by.epamtc.task1.ex2.logic;
 
-import by.epamtc.task1.ex2.exception.ImpossibleMonthException;
-import by.epamtc.task1.ex2.exception.ImpossibleYearException;
-
 public class YearAndMonthLogic {
 	
-	public static boolean isLeapYear(int year) throws ImpossibleYearException {
+	public static boolean isLeapYear(int year) {
 		
 		if( year <= 0) {
-			throw new ImpossibleYearException();
+			//throw new ImpossibleYearException(year);
+			//пока не реализовано
 		}
 		
 		boolean result = false;
@@ -28,9 +26,10 @@ public class YearAndMonthLogic {
 	}
 
 	
-	public static int recieveDaysInMonth (int month, int year) throws ImpossibleYearException, ImpossibleMonthException {
+	public static int defineDaysInMonth (int month, int year) {
 		if (month <= 0 || month > 12) {
-			throw new ImpossibleMonthException();
+			//throw new ImpossibleMonthException(month);
+			//пока не реализовано
 		}
 		
 		int days = 0;
