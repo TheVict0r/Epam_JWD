@@ -8,7 +8,7 @@ public class Presentation {
 	public static void printResult(Point closerPoint) {
 		
 		if (closerPoint == null) {
-			//throw new EmptyPointVariableException(closerPoint);
+			//throw new PointIsNotInitializedException(closerPoint);
 			//пока не реализовано
 		}
 		

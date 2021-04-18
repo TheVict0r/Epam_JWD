@@ -8,7 +8,7 @@ public class PointLogic {
 	public static double defineDistanceZero(Point point) {
 		
 		if (point == null) {
-			//throw new EmptyPointVariableException(point);
+			//throw new PointIsNotInitializedException(point);
 			//пока не реализовано
 		}
 		
@@ -24,12 +24,12 @@ public class PointLogic {
 	public static Point defineCloserPoint (Point pointA, Point pointB) {
 		
 		if (pointA == null) {
-			//throw new EmptyPointVariableException(pointA);
+			//throw new PointIsNotInitializedException(pointA);
 			//пока не реализовано
 		}
 		
 		if (pointB == null) {
-			//throw new EmptyPointVariableException(pointB);
+			//throw new PointIsNotInitializedException(pointB);
 			//пока не реализовано
 		}
 		
