@@ -26,7 +26,7 @@ public class Printer {
 		}
 		
 		String gone;
-		if (hours == 1) {
+		if (hours == 1 || hours == 21) {
 			gone = "прошел ";
 		} else {
 			gone = "прошло ";
@@ -46,10 +46,10 @@ public class Printer {
 	public static String makeHoursRussianWording(int hours) {
 		
 		if (hours < 0) {
-			//throw new IncorrectTimeException("Часы не могут быть отрицательными");
+			//throw new OutOfRangeException("Часы не могут быть отрицательными");
 			//пока не реализовано
 		} else if (hours > 59) {
-			//throw new IncorrectTimeException("Количество часов превышает максимально возможное");
+			//throw new OutOfRangeException("Количество часов превышает максимально возможное");
 		}
 		
 		String hoursStrRu;
@@ -76,10 +76,10 @@ public class Printer {
 	public static String makeMinutesRussianWording(int minutes) {
 		
 		if (minutes < 0) {
-			//throw new IncorrectTimeException("Минуты не могут быть отрицательными");
+			//throw new OutOfRangeException("Минуты не могут быть отрицательными");
 			//пока не реализовано
 		} else if (minutes > 59) {
-			//throw new IncorrectTimeException("Количество минут превышает максимально возможное");
+			//throw new OutOfRangeException("Количество минут превышает максимально возможное");
 		}
 		
 		String minutesStrRu;
@@ -100,10 +100,10 @@ public class Printer {
 	public static String makeSecondsRussianWordings(int seconds) {
 		
 		if (seconds < 0) {
-			//throw new IncorrectTimeException("Секунды не может быть отрицательными");
+			//throw new OutOfRangeException("Секунды не может быть отрицательными");
 			//пока не реализовано
 		} else if (seconds > 59) {
-			//throw new IncorrectTimeException("Количество секунд превышает максимально возможное");
+			//throw new OutOfRangeException("Количество секунд превышает максимально возможное");
 		}
 		
 		String secondsStrRu;

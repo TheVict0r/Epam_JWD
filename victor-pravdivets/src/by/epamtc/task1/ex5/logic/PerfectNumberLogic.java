@@ -6,7 +6,6 @@ public class PerfectNumberLogic {
 			return false;
 		}
 		
-		
 		int dividersSum = 0;
 
 		boolean result = false;

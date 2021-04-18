@@ -1,7 +1,7 @@
 package by.epamtc.task1.ex6.main;
 
 import by.epamtc.task1.ex6.datarequest.DataRequest;
-import by.epamtc.task1.ex6.logic.LogicHoursMinutesSeconds;
+import by.epamtc.task1.ex6.logic.HoursMinutesSecondsLogic;
 import by.epamtc.task1.ex6.printer.Printer;
 
 /*
@@ -20,9 +20,9 @@ public class Main {
 		int minutes;
 		int seconds;
 
-		hours = LogicHoursMinutesSeconds.calculateHours(secondsBeforeN);
-		minutes = LogicHoursMinutesSeconds.calculateMinutes(secondsBeforeN);
-		seconds = LogicHoursMinutesSeconds.calculateSeconds(secondsBeforeN);
+		hours = HoursMinutesSecondsLogic.calculateHours(secondsBeforeN);
+		minutes = HoursMinutesSecondsLogic.calculateMinutes(secondsBeforeN);
+		seconds = HoursMinutesSecondsLogic.calculateSeconds(secondsBeforeN);
 	
 		Printer.printResults(hours, minutes, seconds);
 		
