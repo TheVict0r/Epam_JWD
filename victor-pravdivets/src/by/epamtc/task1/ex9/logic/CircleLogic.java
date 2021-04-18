@@ -5,7 +5,7 @@ public class CircleLogic {
 	public static double calculateLength(int r) {
 		
 		if(r <= 0) {
-			//throw new IncorrectRadiousException(r);
+			//throw new OutOfRangeExceptionn(r);
 			//пока не реализовано
 		}
 		
@@ -17,7 +17,7 @@ public class CircleLogic {
 	public static double calculateArea(int r) {
 		
 		if(r <= 0) {
-			//throw new IncorrectRadiousException(r);
+			//throw new OutOfRangeException(r);
 			//пока не реализовано
 		}
 		
