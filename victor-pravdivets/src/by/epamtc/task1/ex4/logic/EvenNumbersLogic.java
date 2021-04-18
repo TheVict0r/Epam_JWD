@@ -5,7 +5,7 @@ public class EvenNumbersLogic {
 	public static boolean isTwoEvens(int[] numbersArr) {
 
 		if (numbersArr == null) {
-			// throw new NullArrayException(numbersArr);
+			// throw new NullArrayException("Variable is not initialized");
 			// пока не реализовано
 		}
 

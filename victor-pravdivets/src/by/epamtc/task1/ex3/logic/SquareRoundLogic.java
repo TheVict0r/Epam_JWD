@@ -4,7 +4,7 @@ public class SquareRoundLogic {
 	public static double calculateInnerSquareArea(double outerSquareArea) {
 		
 		if (outerSquareArea <= 0) {
-			//throw new IncorrectDataException(outerSquareArea);
+			//throw new OutOfRangeException(outerSquareArea);
 			//пока не реализовано
 		}
 		
@@ -22,12 +22,12 @@ public class SquareRoundLogic {
 
 	public static double compareSquaresAreas(double smallerArea, double biggerArea) {
 		if (smallerArea <= 0) {
-			//throw new IncorrectDataException(smallerArea);
+			//throw new OutOfRangeException(smallerArea);
 			//пока не реализовано
 		}
 
 		if (biggerArea <= 0) {
-			//throw new IncorrectDataException(biggerArea);
+			//throw new OutOfRangeException(biggerArea);
 			//пока не реализовано
 		}
 		
@@ -38,7 +38,7 @@ public class SquareRoundLogic {
 
 	public static double calculateSquareSideByArea(double area) {
 		if (area <= 0) {
-			//throw new IncorrectDataException(area);
+			//throw new OutOfRangeException(area);
 			//пока не реализовано
 		}
 		double result;
@@ -48,7 +48,7 @@ public class SquareRoundLogic {
 
 	public static double calculateSquareAreaByside(double side) {
 		if (side <= 0) {
-			//throw new IncorrectDataException(side);
+			//throw new OutOfRangeException(side);
 			//пока не реализовано
 		}
 		double result;
@@ -58,7 +58,7 @@ public class SquareRoundLogic {
 
 	public static double calculateSquareSideByDiagonal(double diagonal) {
 		if (diagonal <= 0) {
-			//throw new IncorrectDataException(diagonal);
+			//throw new OutOfRangeException(diagonal);
 			//пока не реализовано
 		}
 		double result;
