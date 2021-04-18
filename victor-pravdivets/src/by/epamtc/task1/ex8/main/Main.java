@@ -1,6 +1,6 @@
 package by.epamtc.task1.ex8.main;
 
-import by.epamtc.task1.ex8.logic.LogicForX;
+import by.epamtc.task1.ex8.logic.XFormulaLogic;
 import by.epamtc.task1.scanner.DataScanner;
 
 /* 
@@ -18,7 +18,7 @@ public class Main {
 		x = DataScanner.enterIntFromConsole();
 		
 		double result;
-		result = LogicForX.selectAndRunFormula(x);
+		result = XFormulaLogic.selectFormula(x);
 		
 		System.out.println(result);
 

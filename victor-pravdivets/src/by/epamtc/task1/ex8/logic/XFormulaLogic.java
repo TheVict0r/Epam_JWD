@@ -1,8 +1,8 @@
 package by.epamtc.task1.ex8.logic;
 
-public class LogicForX {
+public class XFormulaLogic {
 
-	public static double selectAndRunFormula(int x) { //надеюсь, это название не противоречит правилу single responsibility
+	public static double selectFormula(int x) { 
 		double result;
 		result = (x >= 3) ? calculateThreeAndMoreFormula(x) : calculateLessThanThreeFormula(x);
 		return result;
